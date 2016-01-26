@@ -1,0 +1,13 @@
+name = Event pass
+description = Read  materials by each user.
+core = 7.x
+version = 7.x-1.0
+dependencies[] = views
+dependencies[] = flag
+dependencies[] = flag_bookmark
+dependencies[] = ctools
+
+files[] = event_pass.views.inc
+files[] = event_pass.views_default.inc
+
+package = Custom

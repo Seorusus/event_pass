@@ -1,0 +1,27 @@
+<?php
+
+
+/**
+ * Implements hook_install().
+ */
+function event_pass_install() {
+  $default = array(
+    'node' => array(
+      'enable' => 1,
+      'max_record' => 50,
+      'view_mode' => array(
+        'full' => 'full',
+      ),
+    ),
+  );
+
+
+}
+/**
+ * Implements hook_uninstall().
+ */
+function event_pass_uninstall()
+{
+	cache_clear_all('event_pass', 'cache', TRUE);
+
+}

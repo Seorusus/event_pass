@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_views_api().
+ */
+function event_pass_views_api() {
+  return array(
+    'api' => '3',
+    'path' => drupal_get_path('module', 'event_pass'),
+  );
+}
+
+
